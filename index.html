@@ -20,7 +20,19 @@
       color: #d3d3d3;
     }
     header {
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 2.5rem;
+    }
+    #banner-img {
+      max-width: 60vw;
+      height: auto;
+    }
+    header span {
+      color: #e3ff00;
     }
    #contact {
   position: fixed;
@@ -109,7 +121,8 @@
  </head> 
  <body> 
    <header>
-  <h1>Livros Digitais do Sentinela Católico</h1> 
+  <h1>Livros Digitais do <br> <span>Sentinela Católico</span></h1> 
+  <img src="./banner" id="banner-img" alt="Banner - Sentinela Católico">
    </header>
    <div id="contact">
      <a href="https://wa.me/553898825266" target="_blank"><i class="fab fa-whatsapp"></i></a>
